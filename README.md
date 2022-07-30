@@ -41,7 +41,7 @@ As well as setting up a Firebase project.
     - In the signup route:
         1. If the method is 'POST' take the inputs and create a user with email & password.
         2. Don't forget to store the user in the login session and to use try and except.
-        3. Redirect the route to the home page
+        3. Redirect the route to the add tweet page
         - **For Authentication you need a valid email and a 6 character long password**
     
 
@@ -51,7 +51,7 @@ As well as setting up a Firebase project.
     - In the signin route:
         1. If the method is 'POST' take the inputs and signin the user with email & password.
         2. Don't forget to store the user in the login session and to use try and except.
-        3. Redirect the route to the home page
+        3. Redirect the route to the add tweet page
 
 
 
