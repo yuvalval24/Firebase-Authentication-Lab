@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for k in keys%}
+    <h4>{{tweet_list[k]["title"]}}</h4>
+    <p>{{tweet_list[k]["text"]}}</p>
+    <p>posted at: {{tweet_list[k]["time"]}}</p>
+    <p>likes: {{tweet_list[k]["likes"]}}</p>
+    <form method="POST" action="/all_tweets">
+        <button type="submit" name="like" value="{{k}}">like</button>
+    </form>
+    {% endfor%}
+</body>
+</html>

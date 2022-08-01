@@ -5,8 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-    Great Job!
     <form action="/add_tweet" method="POST">
+        <div>
+            <label>Title</label>
+            <div class="input-group">
+                <input type="text"  name="title" minlength="3" placeholder="Your title">
+            </div>
+        </div>
+        <div>
+            <label>Text</label>
+            <div class="input-group">
+                <input type="text"  name="text" maxlength="280" placeholder="Your title">
+            </div>
+        </div>
+        <input type="submit" name="submit" value="submit">
+    </form>
+    <form action="/all_tweets" method="get">
+        <input type="submit" name="tweets" value="go_to_tweets">see all tweets</input>
+    </form>
+    <form action="/sign_out" method="POST">
         <input type="submit" name="signout" value="signout">signout</input>
     </form>
 </body>
